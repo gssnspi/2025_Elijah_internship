@@ -8,7 +8,7 @@ library(tibble)
 
 
 #loading of covid data set####
-covid_data<- read_csv("C:/Users/Dell/Desktop/covid_/tested_worldwide.csv")
+covid_data<- read_csv("C:/Users/Dell/Desktop/covid19-by-Elijah/tested_worldwide.csv")
 getwd()
 
 
@@ -102,5 +102,6 @@ ggplot(summary_stats %>% slice_max(positivity_rate, n = 10),
     axis.text.x = element_text(size = 10),
     axis.text.y = element_text(size = 10)
   )
+
 
 
